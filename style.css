@@ -1,0 +1,166 @@
+* {
+    /* border: 1px solid green;   */
+  font-family:Arial, Helvetica, sans-serif;
+ } 
+/* center the header */
+header {
+   text-align: center; 
+  
+}
+header a {
+   text-decoration: none;
+   font-size: 2em;
+   color:black
+  }
+
+/* center and style the main page  */
+main {
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+
+.sign-in-box {
+   margin : 50px;
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+}
+
+.form-box {
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(255, 254, 254);
+   border: 2px solid rgb(240, 235, 235);
+   border-radius:2px;
+   box-shadow: inset;
+   padding: 5px 20px 5px 20px;
+}
+ 
+h2 {
+   font-weight: lighter;
+}
+label {
+   font: size 0.6em;
+   font-weight:lighter; 
+}
+ 
+.forgot-password{
+   float:right; 
+}
+
+/* forgot password dropdown to left on small screen si */
+@media screen and (max-width : 600px) {
+   .forgot-password {
+       float:left;
+}
+}
+/* input style and hover effect on inputs */
+input{
+   margin:10px 0 10px 0;
+   padding:5px 0 5px 0;
+   width: 100%;
+   border-radius: 2px; 
+   border: 1px solid grey;
+}
+
+input:hover {
+   border: 1px solid rgb(238, 111, 42);
+  box-shadow: 1px 1px 7px 1px rgba(242, 115, 69,0.6);
+}   
+
+/* Hover effect on buttons */
+form button {
+   width: 100%;
+   background-color: rgb(242, 192, 67);
+   border-radius: 4px;
+   padding: 5px;
+   margin-bottom: 10px;
+   border: 1px solid rgb(177, 152, 10);
+   box-shadow :outset;
+}
+
+.create-box button {
+   background-color: rgb(195, 199, 199);
+   width: 100%;
+   padding:10px;
+   border: 1px solid rgb(148, 148, 148);
+   border-radius: 5px;
+   box-shadow: outset;
+}
+
+
+.create-box button:hover {
+background-color: rgb(162, 161, 161);
+}
+
+.need-help {
+   font-size: 0.7em;
+  }
+
+/* links style */
+a {
+   text-decoration: none;
+   padding-top: 5px;
+   color: blue;
+}
+a:hover{
+    color:rgb(165, 11, 11);
+}
+
+/* Create new account styling */
+.create-box p { 
+  text-align: center;
+  color: rgb(159, 158, 158);
+   font-size: 0.8em;
+  position:relative;
+}
+/* line before and after new account text on big screen */
+@media screen  and (min-width: 1025px) { 
+   
+.create-box p::before {
+   content: "";
+   display:block;
+   width:120px;
+   height: 1px;
+   background: grey;
+   left:0;
+   top:50%;
+   position:absolute;
+   overflow-wrap: break-word;
+ }
+
+.create-box p::after {
+   content: "";
+   display:block;
+   width:120px;
+   height: 1px;
+   background: grey;
+   right:0;
+   top:50%;
+   position:absolute;
+   }
+}
+
+/* styling of footer */
+footer {
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 20px;
+   border-top: 2px solid rgb(179, 177, 177);
+   }
+
+.footer-text {
+  font-size: 0.8em;
+ margin: 40px;
+ text-align: center;
+}
+
+.footer-text a{
+padding: 0 10px 0 10px;
+}
+
+.footer-text p { 
+   padding:25px;
+}
